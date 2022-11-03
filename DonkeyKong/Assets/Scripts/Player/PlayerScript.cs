@@ -28,7 +28,13 @@ namespace Player
         public JumpingState jumpingState;
 
         [HideInInspector]
+        public MovingJumpState movingJumpState;
+
+        [HideInInspector]
         public FallingState fallingState;
+
+        [HideInInspector]
+        public LadderState ladderState;
 
 
 
@@ -44,6 +50,7 @@ namespace Player
         [Header("Player Values")]
         public float playerSpeed;
         public float jumpHeight;
+        public float jumpForwardBoost;
         public bool isJumping;
 
 
@@ -80,6 +87,8 @@ namespace Player
             movingState = new MovingState(this, sm);
             jumpingState = new JumpingState(this, sm);
             fallingState = new FallingState(this, sm);
+            movingJumpState = new MovingJumpState(this, sm);
+            ladderState = new LadderState(this, sm);
 
             playerRigidbody = GetComponent<Rigidbody2D>();
             playerSprite = GetComponent<SpriteRenderer>();
@@ -110,8 +119,11 @@ namespace Player
 
         public bool IsGrounded()
         {
-            return Physics2D.BoxCast(feetCollider.bounds.center / 1.2f, feetCollider.bounds.size / 1.5f, 0f, Vector2.down, .1f, groundMask);
+            return Physics2D.BoxCast(feetCollider.bounds.center, feetCollider.bounds.size, 0f, Vector2.down, .1f , groundMask);
+        
         }
+
+        
 
      
 

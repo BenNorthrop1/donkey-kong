@@ -36,6 +36,12 @@ namespace Player
                 sm.ChangeState(player.standingState);
             }
 
+
+            if(Input.GetKey(KeyCode.Space) && Mathf.Abs(horizontalInput)> Mathf.Epsilon)
+            {
+                sm.ChangeState(player.movingJumpState);
+            }
+
             if(horizontalInput > 0f)
             {
                 player.playerSprite.flipX = true;

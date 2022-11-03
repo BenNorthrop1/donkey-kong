@@ -34,7 +34,6 @@ namespace Player
 
             if(player.IsGrounded() == true)
             {
-                player.playerRigidbody.AddForce(Vector2.down, ForceMode2D.Force);
                 sm.ChangeState(player.standingState);
             }
 

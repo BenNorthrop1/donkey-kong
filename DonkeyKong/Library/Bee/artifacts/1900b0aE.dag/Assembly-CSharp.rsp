@@ -399,6 +399,8 @@
 "Assets/Scripts/Player/StateMachine.cs"
 "Assets/Scripts/Player/States/FallingState.cs"
 "Assets/Scripts/Player/States/JumpingState.cs"
+"Assets/Scripts/Player/States/LadderState.cs"
+"Assets/Scripts/Player/States/MovingJumpState.cs"
 "Assets/Scripts/Player/States/MovingState.cs"
 "Assets/Scripts/Player/States/StandingState.cs"
 -langversion:9.0
