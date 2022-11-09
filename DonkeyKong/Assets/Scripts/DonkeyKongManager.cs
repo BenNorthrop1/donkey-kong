@@ -12,25 +12,15 @@ public class DonkeyKongManager : MonoBehaviour
     private void Start() 
     {
         playerAnim = GetComponent<Animator>();
+        spawn();
     }
 
-    private void Update() 
-    {
-       int throwChance = Random.Range(0, 6);
-
-        Debug.Log(throwChance.ToString());
-
-        if(throwChance == 5)
-        {
-            playerAnim.Play("DonkeyKongThrow");
-        }
-    }
 
     public void spawn()
     {
-        var projectile = Instantiate(barrelPrefab, spawnPos);
-
-
+        playerAnim.Play("DonkeyKongThrow");
+        Instantiate(barrelPrefab, transform.position, Quaternion.identity);
+        Invoke(nameof(spawn), Random.Range(2f, 20f));
     }
 
 

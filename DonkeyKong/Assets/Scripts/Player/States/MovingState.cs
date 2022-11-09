@@ -4,6 +4,7 @@ namespace Player
     public class MovingState : State
     {
         private float horizontalInput;
+        private float verticalInput;
 
         // constructor
         public MovingState(PlayerScript player, StateMachine sm) : base(player, sm)
@@ -14,6 +15,7 @@ namespace Player
         {
             base.Enter();
             horizontalInput = 0f;
+            verticalInput = 0f;
         }
 
         public override void Exit()
@@ -31,9 +33,15 @@ namespace Player
             base.LogicUpdate();
 
             horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
             if(Mathf.Abs(horizontalInput)< Mathf.Epsilon)
             {
                 sm.ChangeState(player.standingState);
+            }
+
+            if(player.CanClimb() == true && Mathf.Abs(verticalInput)> Mathf.Epsilon)
+            {
+                sm.ChangeState(player.ladderState);
             }
 
 

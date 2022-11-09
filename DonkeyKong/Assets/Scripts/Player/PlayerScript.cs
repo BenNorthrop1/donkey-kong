@@ -58,6 +58,7 @@ namespace Player
         //This sets the ground layers
         [Header("Layers")]
         public LayerMask groundMask;
+        public LayerMask ladderMask;
 
 
 
@@ -68,13 +69,13 @@ namespace Player
         public string mario_Walk = "mario_Walk";
         public string mario_Jump = "mario_Jump";
         public string mario_Falling = "mario_Falling";
+        public string mario_Ladder = "mario_Ladder";
         
 
 
         //This defines the colliders so I can do things like crouching
         [Header("Player Colliders")]
-        public BoxCollider2D chestCollider;
-        public BoxCollider2D feetCollider;
+        public BoxCollider2D playerCollider;
 
 
 
@@ -119,11 +120,14 @@ namespace Player
 
         public bool IsGrounded()
         {
-            return Physics2D.BoxCast(feetCollider.bounds.center, feetCollider.bounds.size, 0f, Vector2.down, .1f , groundMask);
+            return Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0f, Vector2.down, .1f , groundMask);
         
         }
 
-        
+        public bool CanClimb()
+        {
+            return Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0f, Vector2.down, .1f , ladderMask);
+        }
 
      
 
