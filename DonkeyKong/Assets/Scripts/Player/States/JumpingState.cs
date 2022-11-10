@@ -44,7 +44,7 @@ namespace Player
             base.PhysicsUpdate();
 
             player.playerAnimator.CrossFade(player.mario_Jump, 0 , 0);
-            player.playerRigidbody.AddForce(player.transform.up * player.jumpHeight, ForceMode2D.Impulse);
+            player.playerRigidbody.AddForce(Vector2.up * player.jumpHeight, ForceMode2D.Impulse);
         }
     }
 }

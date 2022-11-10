@@ -39,7 +39,8 @@ namespace Player
                 sm.ChangeState(player.standingState);
             }
 
-            if(player.CanClimb() == true && Mathf.Abs(verticalInput)> Mathf.Epsilon)
+            
+            if(player.CanClimb() == true && verticalInput != 0)
             {
                 sm.ChangeState(player.ladderState);
             }

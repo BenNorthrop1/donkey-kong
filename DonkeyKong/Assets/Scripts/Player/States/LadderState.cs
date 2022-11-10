@@ -14,13 +14,16 @@ namespace Player
         public override void Enter()
         {
             base.Enter();
-
+            player.playerCollider.isTrigger = true;
+            player.playerRigidbody.isKinematic = true;
             Debug.Log("climb ladder");
         }
 
         public override void Exit()
         {
             base.Exit();
+            player.playerCollider.isTrigger = false;
+            player.playerRigidbody.isKinematic = false;
         }
 
         public override void HandleInput()
@@ -32,7 +35,12 @@ namespace Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
+            verticalInput = Input.GetAxis("Vertical");
 
+            if(player.CanClimb() == false || Input.GetKey(KeyCode.Space))
+            {
+                sm.ChangeState(player.standingState);
+            }
             
            
         }
@@ -40,11 +48,19 @@ namespace Player
         public override void PhysicsUpdate()
         {
             base.PhysicsUpdate();
-            Vector2 direction;
+
 
             player.playerAnimator.CrossFade(player.mario_Ladder, 0 , 0);
 
-            direction.y = Input.GetAxis("Vertical") * player.playerSpeed;
+            
+            Vector2 velocity = player.playerRigidbody.velocity;
+            velocity.x = 0;
+
+            velocity.y = verticalInput * player.ladderClimbSpeed;
+
+
+
+            player.playerRigidbody.velocity = velocity; 
 
         
         }

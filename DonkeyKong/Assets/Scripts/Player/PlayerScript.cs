@@ -49,6 +49,7 @@ namespace Player
         //This sets the values for the movement
         [Header("Player Values")]
         public float playerSpeed;
+        public float ladderClimbSpeed;
         public float jumpHeight;
         public float jumpForwardBoost;
         public bool isJumping;
@@ -120,7 +121,7 @@ namespace Player
 
         public bool IsGrounded()
         {
-            return Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size, 0f, Vector2.down, .1f , groundMask);
+            return Physics2D.Raycast(transform.position, Vector2.down, .1f, groundMask);
         
         }
 
