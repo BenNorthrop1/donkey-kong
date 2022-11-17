@@ -19,7 +19,7 @@ public class DonkeyKongManager : MonoBehaviour
     public void spawn()
     {
         playerAnim.Play("DonkeyKongThrow");
-        Instantiate(barrelPrefab, transform.position, Quaternion.identity);
+        Instantiate(barrelPrefab, spawnPos.position, Quaternion.identity);
         Invoke(nameof(spawn), Random.Range(2f, 20f));
     }
 

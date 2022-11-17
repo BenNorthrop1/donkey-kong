@@ -15,9 +15,9 @@ public class BarrelMove : MonoBehaviour
 
     private void Update() 
     {
-        Vector2 velocity = playerRigidbody.velocity;
 
-        velocity.x = 0;
+
+        
         
 
 
