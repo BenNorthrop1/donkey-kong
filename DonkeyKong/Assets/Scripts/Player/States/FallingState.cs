@@ -43,7 +43,6 @@ namespace Player
         {
             base.PhysicsUpdate();
 
-            player.playerAnimator.CrossFade(player.mario_Falling, 0.1f, 0);
             
         }
     }

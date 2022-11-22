@@ -25,6 +25,9 @@ namespace Player
         public override void HandleInput()
         {
             base.HandleInput();
+
+            float horizontalInput = player.joystick.Horizontal;
+            float verticalInput = player.joystick.Vertical;
             
         }
 
@@ -44,7 +47,8 @@ namespace Player
             base.PhysicsUpdate();
 
             player.playerAnimator.CrossFade(player.mario_Jump, 0 , 0);
-            player.playerRigidbody.AddForce(Vector2.up * player.jumpHeight, ForceMode2D.Impulse);
+            //player.playerRigidbody.AddForce(Vector2.up * player.jumpHeight, ForceMode2D.Impulse);
+            player.playerRigidbody.velocity = new Vector2(player.playerRigidbody.velocity.x  , player.jumpHeight);
         }
     }
 }

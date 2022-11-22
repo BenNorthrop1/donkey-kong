@@ -1,0 +1,260 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.16f1 (7321c9670bc2) revision 7545289'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Core' Language: 'en' Physical Memory: 8117 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/UnityProjects/Donkey_Kong/donkey-kong/DonkeyKong
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57602
+Successfully changed project path to: C:/UnityProjects/Donkey_Kong/donkey-kong/DonkeyKong
+C:/UnityProjects/Donkey_Kong/donkey-kong/DonkeyKong
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 171.58 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.16f1 (7321c9670bc2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/UnityProjects/Donkey_Kong/donkey-kong/DonkeyKong/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     2979 MB
+    Driver:   31.0.15.2698
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.012736 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+Native extension for iOS target not found
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+[usbmuxd] Attached: 6 00008030-001C2C540110402E
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 197.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1168ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (862ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+				TypeCache.Initialize (171ms)
+					TypeCache.ScanAssembly (168ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (569ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (110ms)
+				SetLoadedEditorAssemblies (15ms)
+				RefreshPlugins (198ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.045637 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\Donkey_Kong\donkey-kong\DonkeyKong\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\UnityProjects\Donkey_Kong\donkey-kong\DonkeyKong\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 172.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.566 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2567ms)
+		BeginReloadAssembly (422ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (179ms)
+		EndReloadAssembly (1958ms)
+			LoadAssemblies (273ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (428ms)
+				TypeCache.Initialize (411ms)
+					TypeCache.ScanAssembly (403ms)
+				ResolveRequiredComponents (16ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (135ms)
+			SetupLoadedEditorAssemblies (1047ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (12ms)
+				RefreshPlugins (173ms)
+				BeforeProcessingInitializeOnLoad (187ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+				ProcessInitializeOnLoadMethodAttributes (232ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5662 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (386.1 KB). Loaded Objects now: 6121.
+Memory consumption went from 0.88 GB to 0.87 GB.
+Total: 8.151100 ms (FindLiveObjects: 1.332900 ms CreateObjectMapping: 1.316000 ms MarkObjects: 5.220700 ms  DeleteObjects: 0.280300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81640.362355 seconds.
+  path: Assets/pixil-layer-Background (2).png
+  artifactKey: Guid(3836325b89ae4b24992a403a1e5d60ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/pixil-layer-Background (2).png using Guid(3836325b89ae4b24992a403a1e5d60ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93964b4c9a33e98839db3a9a00d6b56b') in 0.279863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ARCADECLASSIC.TTF
+  artifactKey: Guid(123301cf67a47194ea8a9e5a39074998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ARCADECLASSIC.TTF using Guid(123301cf67a47194ea8a9e5a39074998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b613d266b513903312e3ef28c559894') in 0.470580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Sprites/Level1-1Stage.png
+  artifactKey: Guid(0b9cf90090a44974e902e38475f4e313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Level1-1Stage.png using Guid(0b9cf90090a44974e902e38475f4e313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0871eefe357631400e0be454174c824d') in 0.058421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/MarioDeathFiller.png
+  artifactKey: Guid(386f54db8c34ee542a5fa8040c850742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/MarioDeathFiller.png using Guid(386f54db8c34ee542a5fa8040c850742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bdb8a9346faa4d16f93ad92f886749') in 0.032371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/DonkeyKongSprites.png
+  artifactKey: Guid(147e0669bcd86a84ebe40b9f86a9943c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DonkeyKongSprites.png using Guid(147e0669bcd86a84ebe40b9f86a9943c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d577e769fc6c3dbe42e8e9965127852') in 0.067833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/level1.png
+  artifactKey: Guid(130c9156b50f6d64b90ce13dd16d7458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/level1.png using Guid(130c9156b50f6d64b90ce13dd16d7458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210e887bdd88521249040822ec69f711') in 0.055918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Ladder.png
+  artifactKey: Guid(aac32b98aae76ef439dba5794cce7a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Ladder.png using Guid(aac32b98aae76ef439dba5794cce7a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f555ce59c714c3e76af1a6cb1986757f') in 0.036747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Top.png
+  artifactKey: Guid(bef0f5fe82475fe4bbe398342933e655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Top.png using Guid(bef0f5fe82475fe4bbe398342933e655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8cbab9f885dbef3d60dc69b91c7dc07') in 0.032898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/pixil-layer-Background.png
+  artifactKey: Guid(763e71829c85733418425f4e407aacef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/pixil-layer-Background.png using Guid(763e71829c85733418425f4e407aacef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42c752435a8a5454bacb5ef4f4a9d10') in 0.036823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/StagePlatform.jpg
+  artifactKey: Guid(5ffab2eaa1f42a24cbe8396749619413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/StagePlatform.jpg using Guid(5ffab2eaa1f42a24cbe8396749619413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336a844e0dc6006552f8c736a756e5f6') in 0.033103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.021445 seconds.
+  path: Assets/Sprites/DonkeyKongSprites (1).png
+  artifactKey: Guid(59c1873f8fa49bb409c559f1afe5c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/DonkeyKongSprites (1).png using Guid(59c1873f8fa49bb409c559f1afe5c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '230a9b3de9553e6d749d4e96a3598e42') in 0.044947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/pixil-layer-Layer 2.png
+  artifactKey: Guid(7208c4b314d753a428a4f82c30380c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/pixil-layer-Layer 2.png using Guid(7208c4b314d753a428a4f82c30380c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb3f6bbd97f0f49a8e670e8210d9503') in 0.031026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Barrel 1.prefab
+  artifactKey: Guid(b29e23c60b67a434e8a1f6e726ffe7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Barrel 1.prefab using Guid(b29e23c60b67a434e8a1f6e726ffe7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd01ef2a7bfda4b65f228cb039871c31f') in 0.098270 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

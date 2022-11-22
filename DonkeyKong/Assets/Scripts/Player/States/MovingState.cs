@@ -3,8 +3,7 @@ namespace Player
 {
     public class MovingState : State
     {
-        private float horizontalInput;
-        private float verticalInput;
+
 
         // constructor
         public MovingState(PlayerScript player, StateMachine sm) : base(player, sm)
@@ -14,8 +13,8 @@ namespace Player
         public override void Enter()
         {
             base.Enter();
-            horizontalInput = 0f;
-            verticalInput = 0f;
+            player.horizontalInput = 0f;
+            player.verticalInput = 0f;
         }
 
         public override void Exit()
@@ -32,30 +31,29 @@ namespace Player
         {
             base.LogicUpdate();
 
-            horizontalInput = Input.GetAxis("Horizontal");
-            verticalInput = Input.GetAxis("Vertical");
-            if(Mathf.Abs(horizontalInput)< Mathf.Epsilon)
+
+            if(Mathf.Abs(player.horizontalInput)< Mathf.Epsilon)
             {
                 sm.ChangeState(player.standingState);
             }
 
             
-            if(player.CanClimb() == true && verticalInput != 0)
+            if(player.CanClimb() == true && player.verticalInput != 0)
             {
                 sm.ChangeState(player.ladderState);
             }
 
 
-            if(Input.GetKey(KeyCode.Space) && Mathf.Abs(horizontalInput)> Mathf.Epsilon)
+            if(player.jumpReady == true && Mathf.Abs(player.horizontalInput)> Mathf.Epsilon && player.IsGrounded())
             {
                 sm.ChangeState(player.movingJumpState);
             }
 
-            if(horizontalInput > 0f)
+            if(player.horizontalInput > 0f)
             {
                 player.playerSprite.flipX = true;
             }
-            else if(horizontalInput < 0f)
+            else if(player.horizontalInput < 0f)
             {
                 player.playerSprite.flipX = false;
             }
@@ -70,7 +68,7 @@ namespace Player
 
             Vector2 velocity = player.playerRigidbody.velocity;
             velocity.x = 0;
-            velocity.x = horizontalInput * player.playerSpeed;
+            velocity.x = player.horizontalInput * player.playerSpeed;
 
             player.playerRigidbody.velocity = velocity; 
 

@@ -4,7 +4,7 @@ namespace Player
 {
     public class LadderState : State
     {
-        private float verticalInput;
+
 
         // constructor
         public LadderState(PlayerScript player, StateMachine sm) : base(player, sm)
@@ -35,9 +35,9 @@ namespace Player
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-            verticalInput = Input.GetAxis("Vertical");
 
-            if(player.CanClimb() == false || Input.GetKey(KeyCode.Space))
+
+            if(player.CanClimb() == false || player.jumpReady == true)
             {
                 sm.ChangeState(player.standingState);
             }
@@ -56,7 +56,7 @@ namespace Player
             Vector2 velocity = player.playerRigidbody.velocity;
             velocity.x = 0;
 
-            velocity.y = verticalInput * player.ladderClimbSpeed;
+            velocity.y = player.verticalInput * player.ladderClimbSpeed;
 
 
 

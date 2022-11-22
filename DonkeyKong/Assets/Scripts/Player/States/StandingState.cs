@@ -3,8 +3,7 @@ namespace Player
 {
     public class StandingState : State
     {
-        private float horizontalInput;
-        private float verticalInput;
+
 
         // constructor
         public StandingState(PlayerScript player, StateMachine sm) : base(player, sm)
@@ -14,8 +13,8 @@ namespace Player
         public override void Enter()
         {
             base.Enter();
-            horizontalInput = 0f;
-            verticalInput = 0f;
+            player.horizontalInput = 0f;
+            player.verticalInput = 0f;
         }
 
         public override void Exit()
@@ -32,20 +31,19 @@ namespace Player
         {
             base.LogicUpdate();
 
-            horizontalInput = Input.GetAxis("Horizontal");
-            verticalInput = Input.GetAxis("Vertical");
-            if(Mathf.Abs(horizontalInput)> Mathf.Epsilon)
+
+            if(Mathf.Abs(player.horizontalInput)> Mathf.Epsilon)
             {
                 sm.ChangeState(player.movingState);
             }
 
-            if(player.CanClimb() == true && verticalInput != 0)
+            if(player.CanClimb() == true && player.verticalInput != 0)
             {
                 sm.ChangeState(player.ladderState);
             }
 
 
-            if(Input.GetKey(KeyCode.Space) && Mathf.Abs(horizontalInput)< Mathf.Epsilon)
+            if(player.jumpReady == true && Mathf.Abs(player.horizontalInput)< Mathf.Epsilon && player.IsGrounded())
             {
                 sm.ChangeState(player.jumpingState);
             }
