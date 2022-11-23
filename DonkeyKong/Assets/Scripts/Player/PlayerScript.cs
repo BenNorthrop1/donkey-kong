@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.VFX;
@@ -129,7 +128,7 @@ namespace Player
             horizontalInput = joystick.Horizontal;
             verticalInput = joystick.Vertical;
 
-            if(Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size * 1.2f, 0f, transform.position, .1f, barrelMask))
+            if(Physics2D.BoxCast(playerCollider.bounds.center, playerCollider.bounds.size  * 1.1f , 0f, transform.position, .1f, barrelMask))
             {
                 isDead = true;
                 sm.ChangeState(deathState);
